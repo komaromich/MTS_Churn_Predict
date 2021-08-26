@@ -1,10 +1,11 @@
 import joblib
 import pandas as pd
+from xgboost import XGBClassifier
 
 
 class ChurnClassifier(object):
     def __init__(self):
-        self.model = joblib.load('random_forest_clf1.pkl')
+        self.model = joblib.load('model (1).pkl')
 
     def predict_customer_churn(self, predictable_df):
         try:
@@ -13,4 +14,4 @@ class ChurnClassifier(object):
             return predicted_df
         except:
             print('Failed to predict')
-            # return None
+            return None
