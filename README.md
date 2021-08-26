@@ -22,6 +22,9 @@ https://bigml.com/user/francisco/gallery/dataset/5163ad540c0b5e5b22000383
 
 Подробное описание и реализация находится в telecom_churn.ipynb <br />
 
+# Описание демо
+
+
 
 
 
