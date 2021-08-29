@@ -50,7 +50,7 @@ $ streamlit run churn_demo_app.py
 
 В папке third_homework находится реализация демо сервиса и файлы:
 
-+ `churn_classifier.py`, в котором реализован класс `ChurnClassifier`
++ `churn_classifier.py`, в котором реализован класс-обёртка `ChurnClassifier`(подгружает модель, делает прогноз)
 + `churn_demo_app.py`, в нем написан код самого демо стенда
 + `dataset.pkl`, датасет на котором обучалась модель
 + `enc.pkl`,  энкодер для конвертации лейбла State в численные значения и обратно 
