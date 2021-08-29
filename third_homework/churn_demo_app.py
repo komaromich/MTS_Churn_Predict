@@ -95,7 +95,7 @@ if submit_button:
     data = []
     height = 8
     width = 10
-    selected_states = encoder.classes_
+    plt.rcParams.update({'font.size': 7})
     if option == 'Клиенты, склонные к оттоку(в %)':
         for i in selected_states:
             data.append(100 * predict[predict['State'] == encoder.transform([i])[0]]['Churn'].sum() / len(predict[predict['State'] == encoder.transform([i])[0]]))
