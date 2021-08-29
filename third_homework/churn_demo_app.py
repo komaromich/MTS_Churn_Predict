@@ -112,7 +112,7 @@ if submit_button:
 
     elif option == 'Лояльные клиенты(в %)':
         for i in selected_states:
-            data.append(1 - predict[predict['State'] == encoder.transform([i])[0]]['Churn'].sum() / len(predict[predict['State'] == encoder.transform([i])[0]]))
+            data.append(100 * (1 - predict[predict['State'] == encoder.transform([i])[0]]['Churn'].sum() / len(predict[predict['State'] == encoder.transform([i])[0]])))
         fig, ax = plt.subplots(figsize=(width, height))
         ax.bar(selected_states, data, width=0.5)
         st.pyplot(fig)
