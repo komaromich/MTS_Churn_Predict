@@ -95,7 +95,7 @@ if submit_button:
     data = []
     height = 8
     width = 10
-    plt.rcParams.update({'font.size': 7})
+    plt.rcParams.update({'font.size': 12 - len(selected_states) // 10})
     if option == 'Клиенты, склонные к оттоку(в %)':
         for i in selected_states:
             data.append(100 * predict[predict['State'] == encoder.transform([i])[0]]['Churn'].sum() / len(predict[predict['State'] == encoder.transform([i])[0]]))
@@ -123,3 +123,4 @@ if submit_button:
         fig, ax = plt.subplots(figsize=(width, height))
         ax.bar(selected_states, data, width=0.5)
         st.pyplot(fig)
+
