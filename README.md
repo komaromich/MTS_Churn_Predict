@@ -57,6 +57,8 @@ $ streamlit run churn_demo_app.py
 + `model (1).pkl`, модель, написанная с использованием библиотеки XGBoost
 + `train_valid_model.ipynb`, нотебук с обученией и валидацией моделей
 + `video-demonstration.mp4`, видео-демонстрация работы сервиса
+
+
 Файлы имеющие расширение .pkl были скачаны при помощи библиотеки joblib
 
 
