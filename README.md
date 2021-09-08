@@ -1,6 +1,4 @@
 # MTS_Churn_Predict
- 
-# MTS_Churn_Predict
 
 Домашнее задание команды Dungeon machines в рамках школы МТС.Тета. 
 
